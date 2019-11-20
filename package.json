@@ -1,0 +1,44 @@
+{
+    "name": "vscode-aql",
+    "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting",
+    "description": "",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/monotykamary/vscode-aql"
+    },
+    "contributes": {
+        "languages": [{
+            "id": "aql",
+            "aliases": ["AQL", "aql"],
+            "extensions": [".aql"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [
+            {
+                "language": "aql",
+                "scopeName": "source.aql",
+                "path": "./syntaxes/aql.tmLanguage.json"
+            },
+            {
+                "injectTo": [
+                    "source.js",
+                    "source.ts",
+                    "source.jsx",
+                    "source.tsx"
+                ],
+                "scopeName": "inline.aql",
+                "path": "./syntaxes/inline-aql.json",
+                "embeddedLanguages": {
+                    "meta.embedded.block.aql": "aql"
+                }
+            }
+        ]
+    }
+}

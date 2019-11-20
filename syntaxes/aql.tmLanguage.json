@@ -1,0 +1,195 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"_reference": "https://raw.githubusercontent.com/arangodb/arangodb/master/js/apps/system/_admin/aardvark/APP/frontend/src/mode-aql.js",
+	"name": "AQL (ArangoDB Query Language)",
+	"patterns": [
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#keyword"
+		},
+		{
+			"include": "#function"
+		},
+		{
+			"include": "#string"
+		},
+		{
+			"include": "#comments"
+		}
+	],
+	"repository": {
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.true.js",
+					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))true(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+				},
+				{
+					"name": "constant.language.boolean.false.js",
+					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))false(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+				},
+				{
+					"name": "constant.language.null.js",
+					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))null(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+				},
+				{
+					"match": "!|[!<>]?(=|~)|<>|<|>|~",
+					"name": "keyword.operator.comparison.aql"
+				},
+				{
+					"match": "\\-|\\+|\\*|\\%|((?<=[^\\/])(?<=[^\\*]))\\/(?=[^\\/])(?=[^\\*])",
+					"name": "keyword.operator.arithmetic.aql"
+				},
+				{
+					"match": "\\|\\|",
+					"name": "keyword.operator.or.aql"
+				},
+				{
+					"match": "\\&\\&",
+					"name": "keyword.operator.and.aql"
+				}
+			]
+		},
+		"number": {
+			"match": "\\b\\d+\\b",
+			"name": "constant.numeric.aql"
+		},
+		"keyword": {
+			"patterns": [
+				{
+					"match": "\\b(for|return|filter|search|sort|limit|let|collect|asc|desc|in|into|insert|update|remove|replace|upsert|options|with|and|or|not|distinct|graph|shortest_path|outbound|inbound|any|all|none|aggregate|like|k_shortest_paths|prune)\\b",
+					"name": "keyword.control.aql"
+				},
+				{
+					"match": "\\b(FOR|RETURN|FILTER|SEARCH|SORT|LIMIT|LET|COLLECT|ASC|DESC|IN|INTO|INSERT|UPDATE|REMOVE|REPLACE|UPSERT|OPTIONS|WITH|AND|OR|NOT|DISTINCT|GRAPH|SHORTEST_PATH|OUTBOUND|INBOUND|ANY|ALL|NONE|AGGREGATE|LIKE|K_SHORTEST_PATHS|PRUNE)\\b",
+					"name": "keyword.control.aql"
+				}
+			]
+		},
+		"function": {
+			"patterns": [
+				{
+					"match": "\\b(to_bool|to_number|to_string|to_list|is_null|is_bool|is_number|is_string|is_list|is_document|typename|json_stringify|json_parse|concat|concat_separator|char_length|lower|upper|substring|left|right|trim|reverse|contains|log|log2|log10|exp|exp2|sin|cos|tan|asin|acos|atan|atan2|radians|degrees|pi|regex_test|like|floor|ceil|round|abs|rand|sqrt|pow|length|count|min|max|average|sum|median|variance_population|variance_sample|first|last|unique|outersection|matches|merge|merge_recursive|has|attributes|values|unset|unset_recursive|keep|near|within|within_rectangle|is_in_polygon|distance|fulltext|paths|traversal|traversal_tree|edges|stddev_sample|stddev_population|slice|nth|position|translate|zip|call|apply|push|append|pop|shift|unshift|remove_value|remove_values|remove_nth|date_now|date_timestamp|date_iso8601|date_dayofweek|date_year|date_month|date_day|date_hour|date_minute|date_second|date_millisecond|date_dayofyear|date_isoweek|date_leapyear|date_quarter|date_days_in_month|date_add|date_subtract|date_diff|date_compare|date_format|fail|passthru|sleep|not_null|first_list|first_document|parse_identifier|current_user|current_database|collections|document|decode_rev|union|union_distinct|intersection|flatten|is_same_collection|check_document|ltrim|rtrim|find_first|find_last|split|substitute|md5|sha1|crc32|fnv64|hash|random_token|to_base64|to_hex|encode_uri_component|soundex|assert|warn|is_key|sorted|sorted_unique|count_distinct|levenshtein_distance|regex_matches|regex_split|uuid|tokens|exists|starts_with|phrase|min_match|boost|analyzer|to_hex|encode_uri_component|soundex|assert|warn|is_key|sorted|sorted_unique|count_distinct|geo_point|geo_multipoint|geo_polygon|geo_linestring|geo_multilinestring|geo_contains|geo_intersects|geo_equals|geo_distance|AQL_LAST_ENTRY)\\b",
+					"name": "support.function.aql"
+				},
+				{
+					"match": "\\b(TO_BOOL|TO_NUMBER|TO_STRING|TO_LIST|IS_NULL|IS_BOOL|IS_NUMBER|IS_STRING|IS_LIST|IS_DOCUMENT|TYPENAME|JSON_STRINGIFY|JSON_PARSE|CONCAT|CONCAT_SEPARATOR|CHAR_LENGTH|LOWER|UPPER|SUBSTRING|LEFT|RIGHT|TRIM|REVERSE|CONTAINS|LOG|LOG2|LOG10|EXP|EXP2|SIN|COS|TAN|ASIN|ACOS|ATAN|ATAN2|RADIANS|DEGREES|PI|REGEX_TEST|LIKE|FLOOR|CEIL|ROUND|ABS|RAND|SQRT|POW|LENGTH|COUNT|MIN|MAX|AVERAGE|SUM|MEDIAN|VARIANCE_POPULATION|VARIANCE_SAMPLE|FIRST|LAST|UNIQUE|OUTERSECTION|MATCHES|MERGE|MERGE_RECURSIVE|HAS|ATTRIBUTES|VALUES|UNSET|UNSET_RECURSIVE|KEEP|NEAR|WITHIN|WITHIN_RECTANGLE|IS_IN_POLYGON|DISTANCE|FULLTEXT|PATHS|TRAVERSAL|TRAVERSAL_TREE|EDGES|STDDEV_SAMPLE|STDDEV_POPULATION|SLICE|NTH|POSITION|TRANSLATE|ZIP|CALL|APPLY|PUSH|APPEND|POP|SHIFT|UNSHIFT|REMOVE_VALUE|REMOVE_VALUES|REMOVE_NTH|DATE_NOW|DATE_TIMESTAMP|DATE_ISO8601|DATE_DAYOFWEEK|DATE_YEAR|DATE_MONTH|DATE_DAY|DATE_HOUR|DATE_MINUTE|DATE_SECOND|DATE_MILLISECOND|DATE_DAYOFYEAR|DATE_ISOWEEK|DATE_LEAPYEAR|DATE_QUARTER|DATE_DAYS_IN_MONTH|DATE_ADD|DATE_SUBTRACT|DATE_DIFF|DATE_COMPARE|DATE_FORMAT|FAIL|PASSTHRU|SLEEP|NOT_NULL|FIRST_LIST|FIRST_DOCUMENT|PARSE_IDENTIFIER|CURRENT_USER|CURRENT_DATABASE|COLLECTIONS|DOCUMENT|DECODE_REV|UNION|UNION_DISTINCT|INTERSECTION|FLATTEN|IS_SAME_COLLECTION|CHECK_DOCUMENT|LTRIM|RTRIM|FIND_FIRST|FIND_LAST|SPLIT|SUBSTITUTE|MD5|SHA1|CRC32|FNV64|HASH|RANDOM_TOKEN|TO_BASE64|TO_HEX|ENCODE_URI_COMPONENT|SOUNDEX|ASSERT|WARN|IS_KEY|SORTED|SORTED_UNIQUE|COUNT_DISTINCT|LEVENSHTEIN_DISTANCE|REGEX_MATCHES|REGEX_SPLIT|UUID|TOKENS|EXISTS|STARTS_WITH|PHRASE|MIN_MATCH|BOOST|ANALYZER|TO_HEX|ENCODE_URI_COMPONENT|SOUNDEX|ASSERT|WARN|IS_KEY|SORTED|SORTED_UNIQUE|COUNT_DISTINCT|GEO_POINT|GEO_MULTIPOINT|GEO_POLYGON|GEO_LINESTRING|GEO_MULTILINESTRING|GEO_CONTAINS|GEO_INTERSECTS|GEO_EQUALS|GEO_DISTANCE)\\b",
+					"name": "support.function.aql"
+				},
+				{
+					"match": "\\b(minus|MINUS)\\b",
+					"name": "support.function.aql"
+				}
+			]
+		},
+		"string": {
+			"patterns": [
+				{
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.js"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.js"
+						}
+					},
+					"name": "string.quoted.single.js",
+					"patterns": [
+						{
+							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+							"name": "constant.character.escape.js"
+						},
+						{
+							"match": "[^']*[^\\n\\r'\\\\]$",
+							"name": "invalid.illegal.string.js"
+						}
+					]
+				},
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.js"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.js"
+						}
+					},
+					"name": "string.quoted.double.js",
+					"patterns": [
+						{
+							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
+							"name": "constant.character.escape.js"
+						},
+						{
+							"match": "[^\"]*[^\\n\\r\"\\\\]$",
+							"name": "invalid.illegal.string.js"
+						}
+					]
+				},
+				{
+					"begin": "`",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.js"
+						}
+					},
+					"end": "`",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.js"
+						}
+					},
+					"name": "string.quoted.template.js",
+					"patterns": [
+						{
+							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
+							"name": "constant.character.escape.js"
+						}
+					]
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"match": "//.*",
+					"name": "comment.single.json"
+				},
+				{
+					"begin": "/\\*\\*(?!/)",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.json"
+						}
+					},
+					"end": "\\*/",
+					"name": "comment.block.documentation.json"
+				},
+				{
+					"begin": "/\\*",
+					"captures": {
+						"0": {
+							"name": "punctuation.definition.comment.json"
+						}
+					},
+					"end": "\\*/",
+					"name": "comment.block.json"
+				}
+			]
+		}
+	},
+	"scopeName": "source.aql"
+}
