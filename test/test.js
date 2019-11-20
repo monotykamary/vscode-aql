@@ -53,3 +53,13 @@ const testQuery4 = /*aql*/`
     FILTER GEO_INTERSECTS(someAreaInNYC, n.geometry)
     RETURN n.geometry
 `;
+
+const testQuery5 = query`
+  FOR user IN users
+    FILTER user.active == 1
+    RETURN {
+      name: CONCAT(user.firstName, " ",
+                  user.lastName),
+      gender: user.gender
+    }
+`;

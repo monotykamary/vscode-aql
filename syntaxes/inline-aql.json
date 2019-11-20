@@ -18,7 +18,7 @@
   },
   "patterns": [
     {
-      "begin": "(([^(])?(aql|AQL))(`)",
+      "begin": "(([^(])?(aql|AQL|query))(`)",
       "end": "(`)",
       "beginCaptures": {
         "1": {
