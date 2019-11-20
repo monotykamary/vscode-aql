@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/monotykamary/vscode-aql/compare/v1.1.0...v1.1.2) (2019-11-20)
+
+
+### Bug Fixes
+
+* added support for query helper template tag ([3ed4b57](https://github.com/monotykamary/vscode-aql/commit/3ed4b5702e5bceb4d66c3cce88f321edc246eb6b))
+
 ### [1.1.1](https://github.com/monotykamary/vscode-aql/compare/v1.1.0...v1.1.1) (2019-11-20)
 
 ## 1.1.0 (2019-11-20)
