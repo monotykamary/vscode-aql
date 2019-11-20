@@ -59,3 +59,10 @@ Pattern matched to constant.language:
 Pattern matched to keyword.operator:
 
 > Any non-word comparison or arithmetic operator (except ternary) available at [https://www.arangodb.com/docs/stable/aql/operators.html](https://www.arangodb.com/docs/stable/aql/operators.html)
+
+
+## Roadmap
+
+- [ ] Ternary Operator
+- [ ] Parenthesis, Array, and Object wrapping (with expressions)
+- [ ] Variables (from @, LET, and RETURN)
