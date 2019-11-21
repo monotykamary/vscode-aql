@@ -11,8 +11,6 @@ The highlighter comes with syntax highlighting for template literals to support 
 
 ## Current Highlighting Support
 
-Currently lacks a ternary operator, parenthesis, array, and object wrapping (which is a regex nightmare) and is planned in the next release, but should work well without it. If anyone wants to create a pull request to handle them, that would be sincerely appreciated.
-
 Keyword highlighting has been taken from [ArangoDB's frontend highlighter](https://raw.githubusercontent.com/arangodb/arangodb/master/js/apps/system/_admin/aardvark/APP/frontend/src/mode-aql.js).
 
 Function highlighting is taken from `http://localhost:8529/_db/_system/_api/aql-builtin` and is extracted in raw JSON and processed by name in the data folder.
