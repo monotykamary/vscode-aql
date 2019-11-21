@@ -63,6 +63,6 @@ Pattern matched to keyword.operator:
 
 ## Roadmap
 
-- [ ] Ternary Operator
-- [ ] Parenthesis, Array, and Object wrapping (with expressions)
+- [x] Ternary Operator
+- [x] Parenthesis, Array, and Object wrapping (with expressions)
 - [ ] Variables (from @, LET, and RETURN)

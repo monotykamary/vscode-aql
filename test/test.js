@@ -63,3 +63,10 @@ const testQuery5 = query`
       gender: user.gender
     }
 `;
+
+const queryShowcase = query`
+  array[* FILTER CURRENT.value == 1 RETURN CURRENT]
+  COLLECT … WITH COUNT INTO …
+  COLLECT … INTO … KEEP …
+  FOR v IN 1..5 OUTBOUND "verts/1" edges PRUNE conditions …
+`

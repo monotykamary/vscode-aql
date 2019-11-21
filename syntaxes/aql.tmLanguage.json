@@ -3,24 +3,13 @@
 	"_reference": "https://raw.githubusercontent.com/arangodb/arangodb/master/js/apps/system/_admin/aardvark/APP/frontend/src/mode-aql.js",
 	"name": "AQL (ArangoDB Query Language)",
 	"patterns": [
-		{
-			"include": "#constant"
-		},
-		{
-			"include": "#number"
-		},
-		{
-			"include": "#keyword"
-		},
-		{
-			"include": "#function"
-		},
-		{
-			"include": "#string"
-		},
-		{
-			"include": "#comments"
-		}
+		{ "include": "#constant" },
+		{ "include": "#number" },
+		{ "include": "#keyword" },
+		{ "include": "#function" },
+		{ "include": "#string" },
+		{ "include": "#comments" },
+		{ "include": "#punctuations" }
 	],
 	"repository": {
 		"constant": {
@@ -52,6 +41,29 @@
 				{
 					"match": "\\&\\&",
 					"name": "keyword.operator.and.aql"
+				},
+				{
+					"begin": "(?!\\?\\.\\s*[^[:digit:]])(\\?)(?!\\?)",
+					"beginCaptures": {
+						"1": {
+							"name": "keyword.operator.ternary.aql"
+						}
+					},
+					"end": "\\s*(:)",
+					"endCaptures": {
+						"1": {
+							"name": "keyword.operator.ternary.aql"
+						}
+					},
+					"patterns": [
+						{ "include": "#constant" },
+						{ "include": "#number" },
+						{ "include": "#keyword" },
+						{ "include": "#function" },
+						{ "include": "#string" },
+						{ "include": "#comments" },
+						{ "include": "#punctuations" }
+					]
 				}
 			]
 		},
@@ -183,6 +195,18 @@
 					},
 					"end": "\\*/",
 					"name": "comment.block.json"
+				}
+			]
+		},
+		"punctuations": {
+			"patterns": [
+				{
+					"match": "\\{|\\}|\\(|\\)|\\[|\\]",
+					"name": "punctuation.definition.block.aql"
+				},
+				{
+					"match": "\\,|\\.|\\:",
+					"name": "punctuation.separator.block.aql"
 				}
 			]
 		}
