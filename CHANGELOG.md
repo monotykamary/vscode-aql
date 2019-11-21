@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/monotykamary/vscode-aql/compare/v1.1.0...v1.2.1) (2019-11-21)
+
+
+### Features
+
+* added ternary operator and punctuations ([3072339](https://github.com/monotykamary/vscode-aql/commit/3072339bdbe22130c32b69088944f70170dde82e))
+
+
+### Bug Fixes
+
+* added support for query helper template tag ([3ed4b57](https://github.com/monotykamary/vscode-aql/commit/3ed4b5702e5bceb4d66c3cce88f321edc246eb6b))
+* grammar convention for comment line and scope to aql ([2ba8ed4](https://github.com/monotykamary/vscode-aql/commit/2ba8ed47c10b450f1b5657d9306c83092d0e5bb6))
+
 ## [1.2.0](https://github.com/monotykamary/vscode-aql/compare/v1.1.2...v1.2.0) (2019-11-21)
 
 
