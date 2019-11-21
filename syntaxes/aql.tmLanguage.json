@@ -15,15 +15,15 @@
 		"constant": {
 			"patterns": [
 				{
-					"name": "constant.language.boolean.true.js",
+					"name": "constant.language.boolean.true.aql",
 					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))true(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
 				},
 				{
-					"name": "constant.language.boolean.false.js",
+					"name": "constant.language.boolean.false.aql",
 					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))false(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
 				},
 				{
-					"name": "constant.language.null.js",
+					"name": "constant.language.null.aql",
 					"match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))null(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
 				},
 				{
@@ -101,24 +101,24 @@
 					"begin": "'",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.begin.js"
+							"name": "punctuation.definition.string.begin.aql"
 						}
 					},
 					"end": "'",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.end.js"
+							"name": "punctuation.definition.string.end.aql"
 						}
 					},
-					"name": "string.quoted.single.js",
+					"name": "string.quoted.single.aql",
 					"patterns": [
 						{
 							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
-							"name": "constant.character.escape.js"
+							"name": "constant.character.escape.aql"
 						},
 						{
 							"match": "[^']*[^\\n\\r'\\\\]$",
-							"name": "invalid.illegal.string.js"
+							"name": "invalid.illegal.string.aql"
 						}
 					]
 				},
@@ -126,24 +126,24 @@
 					"begin": "\"",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.begin.js"
+							"name": "punctuation.definition.string.begin.aql"
 						}
 					},
 					"end": "\"",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.end.js"
+							"name": "punctuation.definition.string.end.aql"
 						}
 					},
-					"name": "string.quoted.double.js",
+					"name": "string.quoted.double.aql",
 					"patterns": [
 						{
 							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]|37[0-7]?|[4-7][0-7]?|.)",
-							"name": "constant.character.escape.js"
+							"name": "constant.character.escape.aql"
 						},
 						{
 							"match": "[^\"]*[^\\n\\r\"\\\\]$",
-							"name": "invalid.illegal.string.js"
+							"name": "invalid.illegal.string.aql"
 						}
 					]
 				},
@@ -151,20 +151,20 @@
 					"begin": "`",
 					"beginCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.begin.js"
+							"name": "punctuation.definition.string.begin.aql"
 						}
 					},
 					"end": "`",
 					"endCaptures": {
 						"0": {
-							"name": "punctuation.definition.string.end.js"
+							"name": "punctuation.definition.string.end.aql"
 						}
 					},
-					"name": "string.quoted.template.js",
+					"name": "string.quoted.template.aql",
 					"patterns": [
 						{
 							"match": "\\\\(x\\h{2}|[0-2][0-7]{0,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)",
-							"name": "constant.character.escape.js"
+							"name": "constant.character.escape.aql"
 						}
 					]
 				}
@@ -174,27 +174,27 @@
 			"patterns": [
 				{
 					"match": "//.*",
-					"name": "comment.single.json"
+					"name": "comment.line.double-slash.aql"
 				},
 				{
 					"begin": "/\\*\\*(?!/)",
 					"captures": {
 						"0": {
-							"name": "punctuation.definition.comment.json"
+							"name": "punctuation.definition.comment.aql"
 						}
 					},
 					"end": "\\*/",
-					"name": "comment.block.documentation.json"
+					"name": "comment.block.documentation.aql"
 				},
 				{
 					"begin": "/\\*",
 					"captures": {
 						"0": {
-							"name": "punctuation.definition.comment.json"
+							"name": "punctuation.definition.comment.aql"
 						}
 					},
 					"end": "\\*/",
-					"name": "comment.block.json"
+					"name": "comment.block.aql"
 				}
 			]
 		},
