@@ -4,7 +4,7 @@ Provides basic syntax highlighting for AQL. This repository was originally inspi
 
 ![aql](aql.png)
 
-The highlighter comes with syntax highlighting for template literals to support Foxx and [arangojs](https://github.com/arangodb/arangojs)
+The highlighter comes with syntax highlighting for template literals to support Foxx and [arangojs](https://github.com/arangodb/arangojs).
 
 ![inline-aql](inline-aql.png)
 
@@ -63,6 +63,10 @@ Pattern matched to keyword.operator:
 
 ## Roadmap
 
+### Highlighting
 - [x] Ternary Operator
 - [x] Parenthesis, Array, and Object wrapping (with expressions)
 - [ ] Variables (from @, LET, and RETURN)
+
+### Language Features
+- [ ] Implement and integrate a [language server](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide) for autocompletion, error-checking, jump-to-definitions, etc... through the [Language Server Protocol (LSP)](https://langserver.org/) for multi-editor support.
