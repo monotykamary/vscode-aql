@@ -1,4 +1,4 @@
-FOR airport, flights, path IN OUTBOUND 'airports/LAX' flights
+FOR airport, flight, path IN OUTBOUND 'airports/LAX' flights
   OPTIONS { bfs: true, uniqueVertices: 'global' }
   // RETURN flight
   /* RETURN path */
