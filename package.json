@@ -2,7 +2,7 @@
     "name": "vscode-aql",
     "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting",
     "description": "Syntax Highlighting for ArangoDB Query Language (AQL) 🙌",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "icon": "arangodb-logo.png",
     "publisher": "monotykamary",
     "engines": {
