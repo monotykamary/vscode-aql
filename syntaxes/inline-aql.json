@@ -52,23 +52,25 @@
       ]
     },
     {
-      "begin": "(?<=\\=|\\:|\\$\\()\\s+(\\/\\/\\s?(aql|AQL|inline-aql|inline-AQL)\\s?$)",
+      "begin": "(\\s?\\/?\\/?\\s?(aql|AQL|inline-aql|inline-AQL)\\s?$)",
       "beginCaptures": {
         "1": {
           "name": "comment.line"
         }
       },
-      "end": "(`)",
+      "end": "(?<=(`))",
       "patterns": [
         {
-          "begin": "(\\G)",
-          "end": "(`)"
-        },
-        {
-          "include": "source.ts#template-substitution-element"
-        },
-        {
-          "include": "source.aql"
+          "begin": "^\\s?(`)$",
+          "end": "^\\s?(`)",
+          "patterns": [
+            {
+              "include": "source.ts#template-substitution-element"
+            },
+            {
+              "include": "source.aql"
+            }
+          ]
         }
       ]
     },
