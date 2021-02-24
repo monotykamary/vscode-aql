@@ -1,2164 +1,2968 @@
 {
    "functions" : [
       {
-         "arguments" : ".|+",
+         "arguments" : ".|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "BM25"
+         "name" : "TOKENS",
+         "stub" : false
       },
       {
          "arguments" : ".|+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "TFIDF"
+         "name" : "BM25",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TFIDF",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "BOOST"
+         "name" : "BOOST",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "MIN_MATCH"
+         "name" : "MIN_MATCH",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "STARTS_WITH"
+         "name" : "STARTS_WITH",
+         "stub" : false
       },
       {
          "arguments" : ".|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "EXISTS"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TOKENS"
+         "name" : "EXISTS",
+         "stub" : false
       },
       {
          "arguments" : ".h,.,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "FULLTEXT"
+         "name" : "FULLTEXT",
+         "stub" : true
       },
       {
          "arguments" : "h.,.,.,.,.",
          "cacheable" : true,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "WITHIN_RECTANGLE"
+         "name" : "WITHIN_RECTANGLE",
+         "stub" : true
       },
       {
          "arguments" : ".h,.,.,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "WITHIN"
+         "name" : "WITHIN",
+         "stub" : true
       },
       {
          "arguments" : ".h,.,.|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "NEAR"
+         "name" : "NEAR",
+         "stub" : true
       },
       {
          "arguments" : ".,.",
          "cacheable" : false,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "ASSERT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "AVG"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "AVERAGE"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "INTERSECTION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "POP"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_DOCUMENT"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UNION_DISTINCT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SLEEP"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RANGE"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_SUBTRACT"
-      },
-      {
-         "arguments" : "",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PI"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DEGREES"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MERGE_RECURSIVE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_QUARTER"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ATAN2"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ACOS"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_LIST"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LENGTH"
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIRST_LIST"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UNSHIFT"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TRIM"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "EXP"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LAST"
-      },
-      {
-         "arguments" : ".|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ATTRIBUTES"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PREGEL_RESULT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LOG10"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "POW"
-      },
-      {
-         "arguments" : "",
-         "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CURRENT_USER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PRODUCT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LOG2"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RANDOM_TOKEN"
-      },
-      {
-         "arguments" : "",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RAND"
-      },
-      {
-         "arguments" : ".,.,.,.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IN_RANGE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ABS"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_AREA"
-      },
-      {
-         "arguments" : ".,.,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LEVENSHTEIN_MATCH"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "OUTERSECTION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_DAYS_IN_MONTH"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LEVENSHTEIN_DISTANCE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SIN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "EXP2"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ENCODE_URI_COMPONENT"
-      },
-      {
-         "arguments" : ".,.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "NGRAM_SIMILARITY"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SUM"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LOWER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MIN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "COS"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SUBSTRING"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "JACCARD"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_OBJECT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "STDDEV_SAMPLE"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_TRUNC"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SORTED"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ATAN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_MULTIPOINT"
-      },
-      {
-         "arguments" : ".,.,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REGEX_REPLACE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_MULTIPOLYGON"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ANALYZER"
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CONCAT"
-      },
-      {
-         "arguments" : ".,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIND_LAST"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "JSON_STRINGIFY"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REGEX_TEST"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PERCENTILE"
-      },
-      {
-         "arguments" : ".,.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "NGRAM_POSITIONAL_SIMILARITY"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MINUS"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LEFT"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "VALUES"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_DAY"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "NOEVAL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MEDIAN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "STDDEV_POPULATION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_STRING"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_NUMBER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FNV64"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RADIANS"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LOG"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MAX"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IPV4_FROM_NUMBER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ROUND"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RIGHT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UPPER"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "APPEND"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FLATTEN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "JSON_PARSE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TYPENAME"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_HEX"
-      },
-      {
-         "arguments" : ".,.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_ROUND"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MD5"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_IN_POLYGON"
+         "name" : "ASSERT",
+         "stub" : false
       },
       {
          "arguments" : ".h",
          "cacheable" : false,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "COLLECTION_COUNT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "COUNT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_NUMBER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ASIN"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_BASE64"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_ISOWEEK"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_ARRAY"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_IPV4"
-      },
-      {
-         "arguments" : ".|.,.,.,.,.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_ISO8601"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_BOOL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "COUNT_UNIQUE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : false,
-         "deterministic" : true,
-         "implementations" : [
-            "js"
-         ],
-         "name" : "V8"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CONTAINS"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_DATESTRING"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REGEX_MATCHES"
-      },
-      {
-         "arguments" : ".|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SPLIT"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "APPLY"
-      },
-      {
-         "arguments" : ".,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REGEX_SPLIT"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UNION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_MILLISECOND"
-      },
-      {
-         "arguments" : ".,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "NGRAM_MATCH"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RTRIM"
-      },
-      {
-         "arguments" : ".,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIND_FIRST"
-      },
-      {
-         "arguments" : ".|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LTRIM"
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CONCAT_SEPARATOR"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_CONTAINS"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PASSTHRU"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_INTERSECTS"
-      },
-      {
-         "arguments" : ".h,.h",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_SAME_COLLECTION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "HASH"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FLOOR"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_KEY"
-      },
-      {
-         "arguments" : ".,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SUBSTITUTE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IPV4_TO_NUMBER"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SHA1"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CHAR_LENGTH"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PUSH"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_NULL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CRC32"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "VARIANCE_SAMPLE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "VARIANCE_POPULATION"
+         "name" : "COLLECTION_COUNT",
+         "stub" : false
       },
       {
          "arguments" : "",
          "cacheable" : false,
-         "canRunOnDBServer" : true,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_NOW"
+         "name" : "CURRENT_DATABASE",
+         "stub" : false
       },
       {
          "arguments" : ".",
-         "cacheable" : true,
+         "cacheable" : false,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SLEEP",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "VARIANCE"
+         "name" : "NOEVAL",
+         "stub" : false
       },
       {
          "arguments" : "|.",
          "cacheable" : false,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "FAIL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "COUNT_DISTINCT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UNIQUE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SORTED_UNIQUE"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SLICE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REVERSE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SHA512"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_HOUR"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIRST"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REMOVE_VALUE"
+         "name" : "FAIL",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
-         "cacheable" : true,
+         "cacheable" : false,
          "canRunOnDBServer" : true,
-         "deterministic" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "NTH"
+         "name" : "WARN",
+         "stub" : false
       },
       {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
+         "arguments" : ".,.",
+         "cacheable" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "POSITION"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CONTAINS_ARRAY"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SHIFT"
+         "name" : "SCHEMA_VALIDATE",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "PHRASE"
+         "name" : "PHRASE",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : false,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "SCHEMA_GET"
+         "name" : "SCHEMA_GET",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "STDDEV"
+         "name" : "POP",
+         "stub" : false
       },
       {
-         "arguments" : ".,.",
+         "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "REMOVE_NTH"
-      },
-      {
-         "arguments" : ".,.,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REPLACE_NTH"
+         "name" : "IS_DOCUMENT",
+         "stub" : false
       },
       {
          "arguments" : ".,.|+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "INTERLEAVE"
+         "name" : "UNION_DISTINCT",
+         "stub" : false
       },
       {
-         "arguments" : ".|+",
+         "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "BOOSTSCORE"
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "MERGE"
-      },
-      {
-         "arguments" : ".|.+",
-         "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CALL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_MONTH"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_STRING"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_DAYOFWEEK"
+         "name" : "RANGE",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "HAS"
+         "name" : "BIT_NEGATE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LENGTH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIRST_LIST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DEGREES",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MERGE_RECURSIVE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ATAN2",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ACOS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_LIST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UNSHIFT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TRIM",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "EXP",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LAST",
+         "stub" : false
       },
       {
          "arguments" : ".|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "KEYS"
+         "name" : "ATTRIBUTES",
+         "stub" : false
       },
       {
-         "arguments" : "",
+         "arguments" : ".|.",
          "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "CURRENT_DATABASE"
+         "name" : "PREGEL_RESULT",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "SQRT"
+         "name" : "LOG10",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "POW",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LOG2",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_AND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RANDOM_TOKEN",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RAND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IN_RANGE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ABS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_AREA",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LEVENSHTEIN_MATCH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "OUTERSECTION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_DAYS_IN_MONTH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LEVENSHTEIN_DISTANCE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "INTERLEAVE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BOOSTSCORE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MERGE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SIN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "EXP2",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ENCODE_URI_COMPONENT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NGRAM_SIMILARITY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SUM",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_TO_STRING",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_SHIFT_RIGHT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SLICE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_SHIFT_LEFT",
+         "stub" : false
       },
       {
          "arguments" : ".,.,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_DIFF"
+         "name" : "REPLACE_NTH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_DECONSTRUCT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LOWER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MIN",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "MATCHES"
+         "name" : "SUBSTRING",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "GEO_POINT"
+         "name" : "JACCARD",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_OBJECT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "STDDEV_SAMPLE",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "GEO_EQUALS"
+         "name" : "DATE_TRUNC",
+         "stub" : false
       },
       {
-         "arguments" : ".,.|+",
+         "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "UNSET_RECURSIVE"
+         "name" : "SORTED",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REGEX_REPLACE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_MULTIPOLYGON",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "REMOVE_VALUES"
+         "name" : "ANALYZER",
+         "stub" : false
       },
       {
-         "arguments" : ".,.|+",
+         "arguments" : ".|+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "KEEP"
+         "name" : "CONCAT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SHA1",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CHAR_LENGTH",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "TRANSLATE"
+         "name" : "PUSH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIND_LAST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "JSON_STRINGIFY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MINUS",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "ZIP"
+         "name" : "LEFT",
+         "stub" : false
       },
       {
-         "arguments" : ".,.,.,.",
+         "arguments" : ".|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DISTANCE"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_POLYGON"
+         "name" : "VALUES",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "GEO_LINESTRING"
+         "name" : "DATE_DAY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_TEST",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "GEO_MULTILINESTRING"
+         "name" : "TO_STRING",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_NUMBER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NOOPT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_BOOL",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FNV64",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RADIANS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LOG",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "INTERSECTION",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PI",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_SUBTRACT",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "VERSION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SOUNDEX",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TAN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IPV4_FROM_NUMBER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ROUND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RIGHT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UPPER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "APPEND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TYPENAME",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_HEX",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_ROUND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MD5",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_IN_POLYGON",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ASIN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_OR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "KEYS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_BASE64",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "AVG",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COLLECTIONS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_MINUTE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_ISOWEEK",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_ARRAY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_IPV4",
+         "stub" : false
       },
       {
          "arguments" : ".|.,.,.,.,.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_TIMESTAMP"
+         "name" : "DATE_ISO8601",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_YEAR"
+         "name" : "IS_BOOL",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_SECOND"
+         "name" : "COUNT_UNIQUE",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
-         "canRunOnDBServer" : true,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : true,
          "implementations" : [
-            "cxx"
+            "js"
          ],
-         "name" : "TO_LIST"
+         "name" : "V8",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "LIKE"
+         "name" : "CONTAINS",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_DAYOFYEAR"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_LEAPYEAR"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CEIL"
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DATE_FORMAT"
+         "name" : "IS_DATESTRING",
+         "stub" : false
       },
       {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_ADD"
+         "name" : "REGEX_MATCHES",
+         "stub" : false
       },
       {
-         "arguments" : ".,.,.|.",
+         "arguments" : ".|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_COMPARE"
+         "name" : "SPLIT",
+         "stub" : false
       },
       {
          "arguments" : "",
          "cacheable" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CURRENT_USER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PRODUCT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_POPCOUNT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "UUID"
+         "name" : "APPLY",
+         "stub" : false
       },
       {
-         "arguments" : ".|+",
+         "arguments" : ".,.|.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "NOT_NULL"
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIRST_DOCUMENT"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_ARRAY"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PARSE_IDENTIFIER"
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_DISTANCE"
+         "name" : "REGEX_SPLIT",
+         "stub" : false
       },
       {
          "arguments" : ".,.|+",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "UNSET"
+         "name" : "UNION",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DECODE_REV"
+         "name" : "DATE_MILLISECOND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NGRAM_MATCH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RTRIM",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DATE_MINUTE"
+         "name" : "BIT_CONSTRUCT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIND_FIRST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ATAN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_MULTIPOINT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_XOR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LTRIM",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CONCAT_SEPARATOR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_CONTAINS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PASSTHRU",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_INTERSECTS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".h,.h",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_SAME_COLLECTION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "HASH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FLOOR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_KEY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SUBSTITUTE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IPV4_TO_NUMBER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_NULL",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CRC32",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FLATTEN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "JSON_PARSE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_NUMBER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COUNT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_QUARTER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MAX",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MEDIAN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "STDDEV_POPULATION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REGEX_TEST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NGRAM_POSITIONAL_SIMILARITY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PERCENTILE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "AVERAGE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "VARIANCE_SAMPLE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "VARIANCE_POPULATION",
+         "stub" : false
       },
       {
          "arguments" : "",
          "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "COLLECTIONS"
+         "name" : "DATE_NOW",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "VARIANCE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COUNT_DISTINCT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BIT_FROM_STRING",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UNIQUE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SORTED_UNIQUE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REVERSE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SHA512",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_HOUR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIRST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REMOVE_VALUE",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
-         "cacheable" : false,
+         "cacheable" : true,
          "canRunOnDBServer" : true,
-         "deterministic" : false,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "WARN"
+         "name" : "NTH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "POSITION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CONTAINS_ARRAY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SHIFT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "STDDEV",
+         "stub" : false
       },
       {
          "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REMOVE_NTH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.+",
          "cacheable" : false,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "SCHEMA_VALIDATE"
+         "name" : "CALL",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "SOUNDEX"
+         "name" : "DATE_MONTH",
+         "stub" : false
       },
       {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : true,
          "implementations" : [
             "cxx"
          ],
-         "name" : "TAN"
+         "name" : "IS_STRING",
+         "stub" : false
       },
       {
-         "arguments" : "",
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_DAYOFWEEK",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "HAS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SQRT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_DIFF",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "MATCHES",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_POINT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_EQUALS",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UNSET_RECURSIVE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REMOVE_VALUES",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "KEEP",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TRANSLATE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ZIP",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
          "cacheable" : false,
-         "canRunOnDBServer" : false,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "VERSION"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
          "canRunOnDBServer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "TO_BOOL"
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : false,
-         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "NOOPT"
+         "name" : "CHECK_DOCUMENT",
+         "stub" : false
       },
       {
          "arguments" : "h.|.",
          "cacheable" : false,
          "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "DOCUMENT"
+         "name" : "DOCUMENT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DISTANCE",
+         "stub" : false
       },
       {
          "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_POLYGON",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_LINESTRING",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_MULTILINESTRING",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|.,.,.,.,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_TIMESTAMP",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_YEAR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_SECOND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "TO_LIST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LIKE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_DAYOFYEAR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_LEAPYEAR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CEIL",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_FORMAT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_ADD",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_COMPARE",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
          "cacheable" : false,
          "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
          "deterministic" : false,
          "implementations" : [
             "cxx"
          ],
-         "name" : "CHECK_DOCUMENT"
+         "name" : "UUID",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NOT_NULL",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIRST_DOCUMENT",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_ARRAY",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PARSE_IDENTIFIER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_DISTANCE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UNSET",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DECODE_REV",
+         "stub" : false
       }
    ]
 }
