@@ -222,6 +222,19 @@
          "stub" : false
       },
       {
+         "arguments" : ".|+",
+         "cacheable" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "CALL_GREENSPUN",
+         "stub" : false
+      },
+      {
          "arguments" : ".,.",
          "cacheable" : false,
          "canRunOnDBServer" : true,
@@ -271,6 +284,19 @@
             "cxx"
          ],
          "name" : "SCHEMA_GET",
+         "stub" : false
+      },
+      {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIRST_DOCUMENT",
          "stub" : false
       },
       {
@@ -349,19 +375,6 @@
             "cxx"
          ],
          "name" : "LENGTH",
-         "stub" : false
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIRST_LIST",
          "stub" : false
       },
       {
@@ -534,6 +547,32 @@
          "stub" : false
       },
       {
+         "arguments" : ".h,.h",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_SAME_COLLECTION",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_INTERSECTS",
+         "stub" : false
+      },
+      {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
@@ -570,6 +609,32 @@
             "cxx"
          ],
          "name" : "RANDOM_TOKEN",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "deterministic" : true,
+         "implementations" : [
+            "js"
+         ],
+         "name" : "V8",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COUNT_UNIQUE",
          "stub" : false
       },
       {
@@ -622,19 +687,6 @@
             "cxx"
          ],
          "name" : "GEO_AREA",
-         "stub" : false
-      },
-      {
-         "arguments" : ".,.,.|.,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "LEVENSHTEIN_MATCH",
          "stub" : false
       },
       {
@@ -1457,6 +1509,58 @@
          "stub" : false
       },
       {
+         "arguments" : ".,.,.|.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "LEVENSHTEIN_MATCH",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_UTCTOLOCAL",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PARSE_IDENTIFIER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IS_ARRAY",
+         "stub" : false
+      },
+      {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
@@ -1613,32 +1717,6 @@
          "stub" : false
       },
       {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "COUNT_UNIQUE",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : false,
-         "canRunOnDBServerCluster" : false,
-         "canRunOnDBServerOneShard" : false,
-         "deterministic" : true,
-         "implementations" : [
-            "js"
-         ],
-         "name" : "V8",
-         "stub" : false
-      },
-      {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
@@ -1753,6 +1831,19 @@
             "cxx"
          ],
          "name" : "REGEX_SPLIT",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_TIMEZONES",
          "stub" : false
       },
       {
@@ -1922,32 +2013,6 @@
             "cxx"
          ],
          "name" : "PASSTHRU",
-         "stub" : false
-      },
-      {
-         "arguments" : ".,.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_INTERSECTS",
-         "stub" : false
-      },
-      {
-         "arguments" : ".h,.h",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_SAME_COLLECTION",
          "stub" : false
       },
       {
@@ -2419,6 +2484,19 @@
          "stub" : false
       },
       {
+         "arguments" : "",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_TIMEZONE",
+         "stub" : false
+      },
+      {
          "arguments" : ".",
          "cacheable" : true,
          "canRunOnDBServer" : true,
@@ -2549,6 +2627,45 @@
          "stub" : false
       },
       {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DECODE_REV",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_DISTANCE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "UNSET",
+         "stub" : false
+      },
+      {
          "arguments" : ".,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
@@ -2676,6 +2793,19 @@
             "cxx"
          ],
          "name" : "DISTANCE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.,.,.|.,.,.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "GEO_IN_RANGE",
          "stub" : false
       },
       {
@@ -2861,6 +2991,32 @@
          "stub" : false
       },
       {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "FIRST_LIST",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_LOCALTOUTC",
+         "stub" : false
+      },
+      {
          "arguments" : "",
          "cacheable" : false,
          "canRunOnDBServer" : true,
@@ -2884,84 +3040,6 @@
             "cxx"
          ],
          "name" : "NOT_NULL",
-         "stub" : false
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "FIRST_DOCUMENT",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IS_ARRAY",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PARSE_IDENTIFIER",
-         "stub" : false
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "GEO_DISTANCE",
-         "stub" : false
-      },
-      {
-         "arguments" : ".,.|+",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "UNSET",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "DECODE_REV",
          "stub" : false
       }
    ]
