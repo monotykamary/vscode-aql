@@ -11,7 +11,7 @@ The highlighter comes with syntax highlighting for template literals to support 
 
 ## Current Highlighting Support
 
-Keyword highlighting has been taken from [ArangoDB's frontend highlighter](https://github.com/arangodb/arangodb/blob/37d99de709a96ef241e77c31790a5921542f98c3/js/apps/system/_admin/aardvark/APP/react/public/assets/src/mode-aql.js).
+Keyword highlighting has been taken from [ArangoDB's frontend highlighter](https://github.com/arangodb/arangodb/blob/3.8.0/js/apps/system/_admin/aardvark/APP/react/public/assets/src/mode-aql.js).
 
 Function highlighting is taken from `http://localhost:8529/_db/_system/_api/aql-builtin` and is extracted in raw JSON and processed by name in the data folder.
 
