@@ -1509,7 +1509,7 @@
          "stub" : false
       },
       {
-         "arguments" : ".,.,.|.,.",
+         "arguments" : ".,.,.|.,.,.",
          "cacheable" : true,
          "canRunOnDBServer" : true,
          "canRunOnDBServerCluster" : true,
