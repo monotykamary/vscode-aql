@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/monotykamary/vscode-aql/compare/v1.6.3...v1.7.0) (2022-08-06)
+
+
+### Features
+
+* add support for Golang inline comments ([3299c48](https://github.com/monotykamary/vscode-aql/commit/3299c481a2f00e497c80f1932383451dc88c34f6))
+
 ### [1.6.3](https://github.com/monotykamary/vscode-aql/compare/v1.6.2...v1.6.3) (2022-02-24)
 
 ### [1.6.2](https://github.com/monotykamary/vscode-aql/compare/v1.6.1...v1.6.2) (2021-11-05)
