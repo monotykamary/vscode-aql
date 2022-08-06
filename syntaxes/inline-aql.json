@@ -3,9 +3,10 @@
     "js",
     "jsx",
     "ts",
-    "tsx"
+    "tsx",
+    "go"
   ],
-  "injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string",
+  "injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string, L:source.go -comment -string",
   "injections": {
     "L:source": {
       "patterns": [
@@ -61,8 +62,8 @@
       "end": "(?<=(`))",
       "patterns": [
         {
-          "begin": "^\\s?(`)$",
-          "end": "^\\s?(`)",
+          "begin": "^\\t?\\s?(`)$",
+          "end": "^\\t?\\s?(`)",
           "patterns": [
             {
               "include": "source.ts#template-substitution-element"

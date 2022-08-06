@@ -40,7 +40,8 @@
                     "source.js",
                     "source.ts",
                     "source.jsx",
-                    "source.tsx"
+                    "source.tsx",
+                    "source.go"
                 ],
                 "scopeName": "inline.aql",
                 "path": "./syntaxes/inline-aql.json",
