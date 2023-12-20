@@ -121,21 +121,6 @@
          "stub" : false
       },
       {
-         "arguments" : ".|+",
-         "cacheable" : false,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : false,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "CALL_GREENSPUN",
-         "stub" : false
-      },
-      {
          "arguments" : ".",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -283,6 +268,21 @@
             "cxx"
          ],
          "name" : "DATE_LEAPYEAR",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "DATE_ISOWEEKYEAR",
          "stub" : false
       },
       {
@@ -1171,6 +1171,21 @@
          "stub" : false
       },
       {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "REVERSE",
+         "stub" : false
+      },
+      {
          "arguments" : ".,.,.",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -1561,21 +1576,6 @@
          "stub" : false
       },
       {
-         "arguments" : ".",
-         "cacheable" : false,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "RANDOM_TOKEN",
-         "stub" : false
-      },
-      {
          "arguments" : ".|.",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -1891,6 +1891,21 @@
          "stub" : false
       },
       {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "COUNT_DISTINCT",
+         "stub" : false
+      },
+      {
          "arguments" : ".,.|+",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -1917,7 +1932,97 @@
          "implementations" : [
             "cxx"
          ],
-         "name" : "COUNT_DISTINCT",
+         "name" : "SHA256",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "IPV4_TO_NUMBER",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SOUNDEX",
+         "stub" : false
+      },
+      {
+         "arguments" : "",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "PI",
+         "stub" : false
+      },
+      {
+         "arguments" : ".h,.,.|.,.",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : false,
+         "canRunOnDBServerCluster" : false,
+         "canRunOnDBServerOneShard" : false,
+         "canUseInAnalyzer" : false,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "NEAR",
+         "stub" : true
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "AVG",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SORTED",
          "stub" : false
       },
       {
@@ -2446,6 +2551,21 @@
          "stub" : false
       },
       {
+         "arguments" : ".",
+         "cacheable" : false,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : false,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "RANDOM_TOKEN",
+         "stub" : false
+      },
+      {
          "arguments" : ".,.|.",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -2956,21 +3076,6 @@
          "stub" : false
       },
       {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "REVERSE",
-         "stub" : false
-      },
-      {
          "arguments" : ".,.",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -2983,96 +3088,6 @@
             "cxx"
          ],
          "name" : "ATAN2",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "IPV4_TO_NUMBER",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SOUNDEX",
-         "stub" : false
-      },
-      {
-         "arguments" : "",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "PI",
-         "stub" : false
-      },
-      {
-         "arguments" : ".h,.,.|.,.",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : false,
-         "canRunOnDBServerCluster" : false,
-         "canRunOnDBServerOneShard" : false,
-         "canUseInAnalyzer" : false,
-         "deterministic" : false,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "NEAR",
-         "stub" : true
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "AVG",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SORTED",
          "stub" : false
       },
       {
