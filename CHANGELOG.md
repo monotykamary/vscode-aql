@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/monotykamary/vscode-aql/compare/v1.7.1...v1.8.0) (2023-12-20)
+
+
+### Features
+
+* add devbox for devex ([1bca872](https://github.com/monotykamary/vscode-aql/commit/1bca872cd2b29d6896eecd2906c802b8c99eb48a))
+
 ### [1.7.1](https://github.com/monotykamary/vscode-aql/compare/v1.7.0...v1.7.1) (2023-04-12)
 
 ## [1.7.0](https://github.com/monotykamary/vscode-aql/compare/v1.6.3...v1.7.0) (2022-08-06)
