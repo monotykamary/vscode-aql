@@ -9,7 +9,7 @@
   "shell": {
     "scripts": {
       "generate": "./from-docker.sh",
-      "release": "yarn release"
+      "release": ["yarn release", "git push --follow-tags origin master"]
     }
   }
 }
