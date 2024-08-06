@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.9.0](https://github.com/monotykamary/vscode-aql/compare/v1.8.2...v1.9.0) (2024-08-06)
+
+
+### Features
+
+* add language server ([fd0938a](https://github.com/monotykamary/vscode-aql/commit/fd0938a67fd16a5583f44226b487102ef5beedd6))
+
 ### [1.8.2](https://github.com/monotykamary/vscode-aql/compare/v1.8.1...v1.8.2) (2024-05-15)
 
 ### [1.8.1](https://github.com/monotykamary/vscode-aql/compare/v1.8.0...v1.8.1) (2024-04-22)
