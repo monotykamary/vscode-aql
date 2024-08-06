@@ -1,0 +1,22 @@
+{
+  "name": "aql-language-server",
+  "description": "AQL Language Server",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "vscode-languageserver": "^8.1.0",
+    "vscode-languageserver-textdocument": "^1.0.8"
+  },
+  "scripts": {
+    "compile": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^5.0.4"
+  }
+}

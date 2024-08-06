@@ -1,14 +1,19 @@
 {
     "name": "vscode-aql",
-    "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting",
-    "description": "Syntax Highlighting for ArangoDB Query Language (AQL) 🙌",
+    "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting and Language Server",
+    "description": "Syntax Highlighting and Language Server for ArangoDB Query Language (AQL) 🙌",
     "version": "1.8.2",
     "icon": "arangodb-logo.png",
     "publisher": "monotykamary",
     "engines": {
-        "vscode": "^1.40.0"
+        "vscode": "^1.75.0"
     },
+    "main": "./client/out/extension",
     "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -b",
+        "watch": "tsc -b -w",
+        "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
         "release": "standard-version"
     },
     "categories": [
@@ -18,6 +23,9 @@
         "type": "git",
         "url": "https://github.com/monotykamary/vscode-aql"
     },
+    "activationEvents": [
+        "onLanguage:aql"
+    ],
     "contributes": {
         "languages": [
             {
@@ -58,6 +66,9 @@
         "@commitlint/cli": "^11.0.0",
         "@commitlint/config-conventional": "^11.0.0",
         "husky": "^4.3.0",
-        "standard-version": "^9.5.0"
+        "standard-version": "^9.5.0",
+        "@types/node": "^16.11.7",
+        "@types/vscode": "^1.75.0",
+        "typescript": "^5.0.4"
     }
 }

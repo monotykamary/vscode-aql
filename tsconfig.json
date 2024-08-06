@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["client/src", "server/src"],
+  "references": [
+    { "path": "./client" },
+    { "path": "./server" }
+  ]
+}

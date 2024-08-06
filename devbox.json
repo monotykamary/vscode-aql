@@ -1,15 +1,14 @@
 {
   "packages": {
-    "nodejs":         "21.3.0",
-    "yarn":           "1.22.19",
-    "podman":         "4.9.3",
-    "podman-tui":     "1.0.0",
-    "podman-compose": "1.0.6"
+    "nodejs":         "21.3.0"
   },
   "shell": {
+    "init_hook": [
+      "npm install"
+    ],
     "scripts": {
       "generate": "./from-docker.sh",
-      "release": ["yarn release", "git push --follow-tags origin master"]
+      "release": ["npm run release", "git push --follow-tags origin master"]
     }
   }
 }
