@@ -241,6 +241,36 @@
          "stub" : false
       },
       {
+         "arguments" : ".|+",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : false,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "BM25",
+         "stub" : false
+      },
+      {
+         "arguments" : ".,.|.",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "SLICE",
+         "stub" : false
+      },
+      {
          "arguments" : ".|.",
          "cacheable" : true,
          "canReadDocuments" : false,
@@ -418,36 +448,6 @@
             "cxx"
          ],
          "name" : "COUNT_UNIQUE",
-         "stub" : false
-      },
-      {
-         "arguments" : ".,.|.",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "SLICE",
-         "stub" : false
-      },
-      {
-         "arguments" : ".|+",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : false,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "BM25",
          "stub" : false
       },
       {
@@ -643,21 +643,6 @@
             "cxx"
          ],
          "name" : "ABS",
-         "stub" : false
-      },
-      {
-         "arguments" : ".",
-         "cacheable" : true,
-         "canReadDocuments" : false,
-         "canRunOnDBServer" : true,
-         "canRunOnDBServerCluster" : true,
-         "canRunOnDBServerOneShard" : true,
-         "canUseInAnalyzer" : true,
-         "deterministic" : true,
-         "implementations" : [
-            "cxx"
-         ],
-         "name" : "ROUND",
          "stub" : false
       },
       {
@@ -2218,6 +2203,36 @@
             "cxx"
          ],
          "name" : "SORTED_UNIQUE",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ROUND",
+         "stub" : false
+      },
+      {
+         "arguments" : ".",
+         "cacheable" : true,
+         "canReadDocuments" : false,
+         "canRunOnDBServer" : true,
+         "canRunOnDBServerCluster" : true,
+         "canRunOnDBServerOneShard" : true,
+         "canUseInAnalyzer" : true,
+         "deterministic" : true,
+         "implementations" : [
+            "cxx"
+         ],
+         "name" : "ENTRIES",
          "stub" : false
       },
       {
