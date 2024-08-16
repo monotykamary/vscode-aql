@@ -11,7 +11,7 @@
     "main": "./client/out/extension",
     "scripts": {
         "vscode:prepublish": "npm run compile",
-        "compile": "tsc -b",
+        "compile": "mkdir -p client/out server/out && tsc -b client/tsconfig.json server/tsconfig.json --force",
         "watch": "tsc -b -w",
         "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
         "release": "standard-version"
