@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.3](https://github.com/monotykamary/vscode-aql/compare/v1.9.2...v1.9.3) (2024-08-16)
+
+
+### Bug Fixes
+
+* force compilation ([ea1f1c0](https://github.com/monotykamary/vscode-aql/commit/ea1f1c0dd2848a7a5759cb5159543bab73b6f3ba))
+
 ### [1.9.2](https://github.com/monotykamary/vscode-aql/compare/v1.9.1...v1.9.2) (2024-08-06)
 
 ### [1.9.1](https://github.com/monotykamary/vscode-aql/compare/v1.9.0...v1.9.1) (2024-08-06)
