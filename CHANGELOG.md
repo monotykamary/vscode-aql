@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/monotykamary/vscode-aql/compare/v1.9.4...v1.10.0) (2024-08-23)
+
+
+### Features
+
+* add python syntax highlighting ([#23](https://github.com/monotykamary/vscode-aql/issues/23)) ([9d42c7a](https://github.com/monotykamary/vscode-aql/commit/9d42c7a6157011c2622e548041101ba5bd7ca5b6))
+
 ### [1.9.4](https://github.com/monotykamary/vscode-aql/compare/v1.9.3...v1.9.4) (2024-08-16)
 
 ### [1.9.3](https://github.com/monotykamary/vscode-aql/compare/v1.9.2...v1.9.3) (2024-08-16)
