@@ -1,6 +1,6 @@
 {
   "packages": {
-    "nodejs":         "21.3.0"
+    "nodejs": "22.5.1"
   },
   "shell": {
     "init_hook": [
@@ -8,7 +8,7 @@
     ],
     "scripts": {
       "generate": "./from-docker.sh",
-      "release": ["npm run release", "git push --follow-tags origin master"]
+      "release":  ["npm run release", "git push --follow-tags origin master"]
     }
   }
 }
