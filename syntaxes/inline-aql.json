@@ -4,9 +4,10 @@
     "jsx",
     "ts",
     "tsx",
-    "go"
+    "go",
+    "py"
   ],
-  "injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string, L:source.go -comment -string",
+  "injectionSelector": "L:source.js -comment -string, L:source.jsx -comment -string,  L:source.js.jsx -comment -string, L:source.ts -comment -string, L:source.tsx -comment -string, L:source.go -comment -string, L:source.python",
   "injections": {
     "L:source": {
       "patterns": [
@@ -28,9 +29,6 @@
       },
       "patterns": [
         {
-          "include": "source.ts#template-substitution-element"
-        },
-        {
           "include": "source.aql"
         }
       ]
@@ -44,9 +42,6 @@
       },
       "end": "(`)",
       "patterns": [
-        {
-          "include": "source.ts#template-substitution-element"
-        },
         {
           "include": "source.aql"
         }
@@ -65,9 +60,6 @@
           "begin": "^\\t?\\s?(`)$",
           "end": "^\\t?\\s?(`)",
           "patterns": [
-            {
-              "include": "source.ts#template-substitution-element"
-            },
             {
               "include": "source.aql"
             }
@@ -90,10 +82,41 @@
       },
       "patterns": [
         {
-          "include": "source.ts#template-substitution-element"
+          "include": "source.aql"
+        }
+      ]
+    },
+    {
+      "begin": "^(#\\s*aql)\\s*$",
+      "beginCaptures": {
+        "1": {
+          "name": "comment.line.number-sign.python"
+        }
+      },
+      "end": "(?<='''|\"\"\")",
+      "patterns": [
+        {
+          "begin": "('''|\"\"\")\\s*$",
+          "beginCaptures": {
+            "1": {
+              "name": "string.quoted.multi.python"
+            }
+          },
+          "end": "('''|\"\"\")",
+          "endCaptures": {
+            "1": {
+              "name": "string.quoted.multi.python"
+            }
+          },
+          "contentName": "meta.embedded.block.aql",
+          "patterns": [
+            {
+              "include": "source.aql"
+            }
+          ]
         },
         {
-          "include": "source.js"
+          "include": "source.python"
         }
       ]
     }

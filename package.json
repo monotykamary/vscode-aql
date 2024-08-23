@@ -52,7 +52,8 @@
                     "source.ts",
                     "source.jsx",
                     "source.tsx",
-                    "source.go"
+                    "source.go",
+                    "source.python"
                 ],
                 "scopeName": "inline.aql",
                 "path": "./syntaxes/inline-aql.json",
