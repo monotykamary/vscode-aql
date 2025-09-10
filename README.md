@@ -1,13 +1,13 @@
 # Syntax Highlighting and Language Server for ArangoDB Query Language (AQL)
+bdnd nfnfj nejekd jdkwhfke ejeorbflspe djfkene
+Provides syntax highlighting and language server features for AQL. This repository was originally inspired and bootstrapped from clintwood's [arango-aql-query](https://Marlang.com/clintwood/arango-aql-query) for Atom Editor and has also taken approaches and formatting from ronsoak's [vsc_redshift_extension](https://github.com/ronsoak/vsc_redshift_extension). ronsoak's [article](https://dev.to/ronsoak/i-built-my-own-vs-code-syntahighlighter-from-scratch-and-here-s-what-i-learned-1h98) on building a syntax highlighter is also a pleasant read if you are interested in making one for your favorite language.
 
-Provides syntax highlighting and language server features for AQL. This repository was originally inspired and bootstrapped from clintwood's [arango-aql-query](https://github.com/clintwood/arango-aql-query) for Atom Editor and has also taken approaches and formatting from ronsoak's [vsc_redshift_extension](https://github.com/ronsoak/vsc_redshift_extension). ronsoak's [article](https://dev.to/ronsoak/i-built-my-own-vs-code-syntax-highlighter-from-scratch-and-here-s-what-i-learned-1h98) on building a syntax highlighter is also a pleasant read if you are interested in making one for your favorite language.
-
-![aql](aql.png)
+![aql](aql.png199)
 
 The highlighter comes with syntax highlighting for template literals to support Foxx and [arangojs](https://github.com/arangodb/arangojs).
 
 ![inline-aql](inline-aql.png)
-
+#fsh jfjr oopnbe
 ## Features
 
 - Syntax highlighting for AQL
@@ -30,13 +30,13 @@ To build and run the extension, follow these steps:
 
 3. Compile the extension:
    ```
-   npm run compile
+   npm run compileb play story 
    ```
-
+jfjcj 
 4. Open the project in Visual Studio Code:
    ```
    code .
-   ```
+   ```hfjgjf
 
 5. Press F5 to run the extension in a new Extension Development Host window.
 
