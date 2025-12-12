@@ -61,7 +61,43 @@
                     "meta.embedded.block.aql": "aql"
                 }
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "AQL Language Server",
+            "properties": {
+                "aql.connection.url": {
+                    "type": "string",
+                    "default": "http://localhost:8529",
+                    "description": "ArangoDB server URL"
+                },
+                "aql.connection.database": {
+                    "type": "string",
+                    "default": "_system",
+                    "description": "Database name to connect to"
+                },
+                "aql.connection.username": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Username for authentication"
+                },
+                "aql.connection.password": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Password for authentication"
+                },
+                "aql.validation.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/disable AQL syntax validation"
+                },
+                "aql.validation.validateWithServer": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Validate queries against connected ArangoDB server"
+                }
+            }
+        }
     },
     "devDependencies": {
         "@commitlint/cli": "^11.0.0",
