@@ -32,11 +32,20 @@ export function activate(context: ExtensionContext) {
 
   // Options to control the language client
   const clientOptions: LanguageClientOptions = {
-    // Register the server for AQL documents
-    documentSelector: [{ scheme: 'file', language: 'aql' }],
+    // Register the server for AQL documents and embedded AQL in JS/TS
+    documentSelector: [
+      { scheme: 'file', language: 'aql' },
+      // Support embedded AQL in JS/TS template literals
+      { scheme: 'file', language: 'javascript' },
+      { scheme: 'file', language: 'typescript' },
+      { scheme: 'file', language: 'javascriptreact' },
+      { scheme: 'file', language: 'typescriptreact' }
+    ],
     synchronize: {
-      // Notify the server about file changes to '.clientrc files contained in the workspace
-      fileEvents: workspace.createFileSystemWatcher('**/.clientrc')
+      // Watch for .arangodb.json configuration file changes
+      fileEvents: workspace.createFileSystemWatcher('**/.arangodb.json'),
+      // Sync configuration changes
+      configurationSection: 'aql'
     }
   };
 

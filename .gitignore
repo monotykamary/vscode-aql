@@ -1,2 +1,16 @@
 node_modules
 *.patch
+
+# Compiled output
+client/out/
+server/out/
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Lock files (use npm ci in CI)
+bun.lock
+package-lock.json
+
+# VS Code test output
+.vscode-test/
