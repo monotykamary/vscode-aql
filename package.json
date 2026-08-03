@@ -108,5 +108,5 @@
         "@types/vscode": "^1.75.0",
         "typescript": "^5.0.4"
     },
-    "packageManager": "pnpm@11.18.0"
+    "packageManager": "pnpm@11.20.0"
 }
