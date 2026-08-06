@@ -20,7 +20,7 @@
   },
   "patterns": [
     {
-      "begin": "(([^(])?(aql|AQL|query))(`)",
+      "begin": "(([^(])?(aql|AQL|query))(?:<.+?>)?(`)",
       "end": "(`)",
       "beginCaptures": {
         "1": {
