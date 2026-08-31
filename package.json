@@ -1,112 +1,111 @@
 {
-    "name": "vscode-aql",
-    "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting and Language Server",
-    "description": "Syntax Highlighting and Language Server for ArangoDB Query Language (AQL) 🙌",
-    "version": "1.10.2",
-    "icon": "arangodb-logo.png",
-    "publisher": "monotykamary",
-    "engines": {
-        "vscode": "^1.75.0"
-    },
-    "main": "./client/out/extension",
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "mkdir -p client/out server/out && tsc -b client/tsconfig.json server/tsconfig.json --force",
-        "watch": "tsc -b -w",
-        "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
-        "release": "standard-version"
-    },
-    "categories": [
-        "Programming Languages"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/monotykamary/vscode-aql"
-    },
-    "activationEvents": [
-        "onLanguage:aql"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "aql",
-                "aliases": [
-                    "AQL",
-                    "aql"
-                ],
-                "extensions": [
-                    ".aql"
-                ],
-                "configuration": "./language-configuration.json"
-            }
+  "name": "vscode-aql",
+  "displayName": "AQL (ArangoDB Query Language) Syntax Highlighting and Language Server",
+  "description": "Syntax Highlighting and Language Server for ArangoDB Query Language (AQL) 🙌",
+  "version": "1.10.2",
+  "icon": "arangodb-logo.png",
+  "publisher": "monotykamary",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "main": "./client/out/extension",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "mkdir -p client/out server/out && tsc -b client/tsconfig.json server/tsconfig.json --force",
+    "watch": "tsc -b -w",
+    "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
+    "release": "standard-version"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monotykamary/vscode-aql"
+  },
+  "activationEvents": [
+    "onLanguage:aql"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "aql",
+        "aliases": [
+          "AQL",
+          "aql"
         ],
-        "grammars": [
-            {
-                "language": "aql",
-                "scopeName": "source.aql",
-                "path": "./syntaxes/aql.tmLanguage.json"
-            },
-            {
-                "injectTo": [
-                    "source.js",
-                    "source.ts",
-                    "source.jsx",
-                    "source.tsx",
-                    "source.go",
-                    "source.python"
-                ],
-                "scopeName": "inline.aql",
-                "path": "./syntaxes/inline-aql.json",
-                "embeddedLanguages": {
-                    "meta.embedded.block.aql": "aql"
-                }
-            }
+        "extensions": [
+          ".aql"
         ],
-        "configuration": {
-            "type": "object",
-            "title": "AQL Language Server",
-            "properties": {
-                "aql.connection.url": {
-                    "type": "string",
-                    "default": "http://localhost:8529",
-                    "description": "ArangoDB server URL"
-                },
-                "aql.connection.database": {
-                    "type": "string",
-                    "default": "_system",
-                    "description": "Database name to connect to"
-                },
-                "aql.connection.username": {
-                    "type": "string",
-                    "default": "",
-                    "description": "Username for authentication"
-                },
-                "aql.connection.password": {
-                    "type": "string",
-                    "default": "",
-                    "description": "Password for authentication"
-                },
-                "aql.validation.enabled": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Enable/disable AQL syntax validation"
-                },
-                "aql.validation.validateWithServer": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Validate queries against connected ArangoDB server"
-                }
-            }
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "aql",
+        "scopeName": "source.aql",
+        "path": "./syntaxes/aql.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.jsx",
+          "source.tsx",
+          "source.go",
+          "source.python"
+        ],
+        "scopeName": "inline.aql",
+        "path": "./syntaxes/inline-aql.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.aql": "aql"
         }
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^11.0.0",
-        "@commitlint/config-conventional": "^11.0.0",
-        "husky": "^4.3.0",
-        "standard-version": "^9.5.0",
-        "@types/node": "^16.11.7",
-        "@types/vscode": "^1.75.0",
-        "typescript": "^5.0.4"
-    },
-    "packageManager": "pnpm@11.20.0"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "AQL Language Server",
+      "properties": {
+        "aql.connection.url": {
+          "type": "string",
+          "default": "http://localhost:8529",
+          "description": "ArangoDB server URL"
+        },
+        "aql.connection.database": {
+          "type": "string",
+          "default": "_system",
+          "description": "Database name to connect to"
+        },
+        "aql.connection.username": {
+          "type": "string",
+          "default": "",
+          "description": "Username for authentication"
+        },
+        "aql.connection.password": {
+          "type": "string",
+          "default": "",
+          "description": "Password for authentication"
+        },
+        "aql.validation.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable/disable AQL syntax validation"
+        },
+        "aql.validation.validateWithServer": {
+          "type": "boolean",
+          "default": false,
+          "description": "Validate queries against connected ArangoDB server"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "standard-version": "^9.5.0",
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.4"
+  }
 }
